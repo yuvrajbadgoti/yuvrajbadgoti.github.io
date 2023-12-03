@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Challenge</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        #challenge-container {
+            border: 2px solid #333;
+            padding: 20px;
+            margin: 20px;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Web Challenge</h1>
+    <div id="challenge-container">
+        <p>Welcome to the challenge! Your task is to find the hidden message.</p>
+        <p>The message is hidden somewhere in this HTML page.</p>
+        <p id="hidden-message" style="display: none; color: green; font-weight: bold;">Congratulations! You found the hidden message!</p>
+        <button onclick="revealMessage()">Reveal Message</button>
+    </div>
+
+    <script>
+        function revealMessage() {
+            document.getElementById('hidden-message').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
